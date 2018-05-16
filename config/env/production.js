@@ -71,6 +71,8 @@ module.exports = {
       *                                                                           *
       ****************************************************************************/
       // ssl: true,
+      adapter: 'sails-mongo',
+      url: 'mongodb://ivanKoretskyy:Irak+911@ds257245.mlab.com:57245/sailstest'
 
     },
 
@@ -148,9 +150,10 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
+     allowOrigins: [
       //   'https://example.com',
-      // ]
+      'http://localhost:1337'
+       ]
     },
 
   },
@@ -250,10 +253,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+   onlyAllowOrigins: [
+    'http://localhost:1337'
+    ],
 
 
     /***************************************************************************
