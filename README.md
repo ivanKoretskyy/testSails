@@ -44,3 +44,6 @@ set production environment in config
 in herocu create new app
     connect it to github reposetory and and branch
     https://ivankoretskyytest1.herokuapp.com
+
+add endpoint for get count of user
+add endpoint for submiting 100 stub user

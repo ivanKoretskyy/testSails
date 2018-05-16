@@ -10,8 +10,8 @@
 
 module.exports.routes = {
 
-  'POST /user/sead': 'UserController/sead'
-
+  'POST /user/sead': 'UserController/sead',
+  'GET /user/count': 'UserController.getUserCount'
 
   /***************************************************************************
   *                                                                          *
