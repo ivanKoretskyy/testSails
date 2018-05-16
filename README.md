@@ -36,3 +36,11 @@ set config/datastores.js to  connect to mongo
     url: 'mongodb://ivanKoretskyy:Irak+911@ds257245.mlab.com:57245/sailstest'
 
 set model to work with mongo _id
+
+set production environment in config
+    allow origin 
+    datastore adapter
+
+in herocu create new app
+    connect it to github reposetory and and branch
+    https://ivankoretskyytest1.herokuapp.com

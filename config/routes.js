@@ -10,6 +10,8 @@
 
 module.exports.routes = {
 
+  'POST /user/sead': 'UserController/sead'
+
 
   /***************************************************************************
   *                                                                          *
