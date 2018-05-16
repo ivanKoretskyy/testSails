@@ -11,7 +11,10 @@
 module.exports.routes = {
 
   'POST /user/sead': 'UserController/sead',
-  'GET /user/count': 'UserController.getUserCount'
+  'GET /user/count': 'UserController.getUserCount',
+  'POST /message': 'PostController.create',
+  'GET /user/:id/messages': 'UserController.getUserMessages',
+  'GET /user/:id/withMessages': 'UserController.getUserWithMessages'
 
   /***************************************************************************
   *                                                                          *

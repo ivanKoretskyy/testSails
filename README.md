@@ -47,3 +47,11 @@ in herocu create new app
 
 add endpoint for get count of user
 add endpoint for submiting 100 stub user
+
+
+add post model and controller (one user can have many posts)
+add appropriate association betwin user an post
+
+add route for grabing user posts and and user with his posts
+
+add appropriate actions to post

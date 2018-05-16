@@ -23,7 +23,18 @@ module.exports = {
       const count = await User.count({});
       console.log(`count: ${count}`)
       return res.json(count);
-  }
+  },
+
+  async getUserMessages(req, res) {
+      console.log('getUserMessages ' + req.params.id);
+      const messages = await Post.find({user: req.params.id});
+      return res.json(messages);
+  },
+
+  async getUserWithMessages(req, res) {
+    const user = await User.findOne({ id: req.params.id }).populate('posts');
+    return res.json(user);
+}
 
 };
 

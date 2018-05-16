@@ -11,7 +11,10 @@ module.exports = {
     id: { type: 'string', columnName: '_id' },
     firstName: { type: 'string', columnName: 'firstName' },
     lastName: { type: 'string' },
-    email: { type: 'string' }
+    email: { type: 'string' },
+    
+    //associaiton
+    posts: { collection: 'post', via: 'user' },
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
